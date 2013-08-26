@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SimpleVideoPlayer</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- SimpleVideoPlayer references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div>
+        <video src="#" id="player" controls="controls"></video>
+    </div>
+  <!--  <button id="pick-file-button">Add a video</button>
+    <button id="pick-multiple-files-button">Add several videos</button>-->
+    <ul id="loaded-videos"></ul>
+
+     <div id="appbar-id" data-win-control="WinJS.UI.AppBar" data-win-options="">
+        <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'pick-file-button',label:'Add a video',icon:'add',
+                section:'global',tooltip:'Add a video to playlist'}">
+        </button>
+
+        <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'pick-multiple-files-button',label:'Add several videos',icon: 'more',
+                section:'global',tooltip:'Add several videos to playlist'}">
+        </button>
+        <hr
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{type:'separator',section:'global'}" />
+          <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'remove-file-button',label:'Remove video',icon:'remove',
+                section:'global',tooltip:'Click to remove currently playing video from list'}">
+        </button>
+
+         <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'save-list-to-file',label:'Save playlist',icon:'save',
+                section:'selection',tooltip:'Click to save playlist to file'}">
+        </button>
+
+          <button
+            data-win-control="WinJS.UI.AppBarCommand"
+            data-win-options="{id:'load-list-from-file',label:'Load playlist',icon:'openfile',
+                section:'selection',tooltip:'Click to load playlist from file'}">
+        </button>
+    </div>
+</body>
+</html>
