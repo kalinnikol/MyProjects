@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>homePage</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/home/home.css" rel="stylesheet" />
+    <script src="/pages/home/home.js"></script>
+    <script src="data.js"></script>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <div class="fragment homepage">
+        <header aria-label="Header content" role="banner">
+            <button class="win-backbutton" aria-label="Back" disabled type="button"></button>
+            <h1 class="titlearea win-type-ellipsis">
+                <span class="pagetitle">Sofia</span>
+            </h1>
+        </header>
+       
+        <section aria-label="Main content" role="main">
+             <div id="town-overview">
+                    <p>Sofia (Bulgarian: София, pronounced [ˈsɔfijɐ] ( listen)) is the capital and largest city of Bulgaria.</p> 
+                    Sofia is located at the foot of Mount Vitosha in the western part of the country.
+                    It occupies a strategic position at the centre of the Balkan Peninsula.Sofia's history spans 2,400 years. 
+                    Its ancient name Serdica derives from the local Celtic tribe of the serdi who established the town in the 5th century BC. 
+                    It remained a relatively small settlement until 1879, when it was declared the capital of Bulgaria.
+Sofia is the 15th largest city in the European Union with a population of around 1.3 million people, or 1,241,396 in the city proper.
+Sofia has been ranked by the Globalization and World Cities Research Network as a Beta− city.
+                     Many of the major universities, cultural institutions, and businesses of Bulgaria are concentrated in Sofia.
+                </div>
+            <div id="mediumListIconTextTemplate" data-win-control="WinJS.Binding.Template">
+        <div style="width: 150px; height: 100px;">
+
+            <!-- Displays the "picture" field. -->
+            <img src="#" style="width: 60px; height: 60px;" 
+                 data-win-bind="alt: title; src: picture" />
+            <div>
+
+                <!-- Displays the "title" field. -->
+                <h4 data-win-bind="innerText: title"></h4>
+
+                <!-- Displays the "text" field. --> 
+                <h6 data-win-bind="innerText: text"></h6>
+            </div>
+        </div>
+    </div>
+    <div id="basicListView" data-win-control="WinJS.UI.ListView" 
+        data-win-options="{itemDataSource : Data.itemList.dataSource, 
+            itemTemplate: select('#mediumListIconTextTemplate')}">
+    </div>
+        </section>
+    </div>
+</body>
+</html>
