@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>PrimeNumbersCachingCalculator</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- PrimeNumbersCachingCalculator references -->
+    <link href="/css/default.css" rel="stylesheet" />
+
+    <script src="js/intervalPrimesWorker.js"></script>
+    <script src="js/nPrimesWorker.js"></script>
+    <script src="js/upperLimitPrimesWorker.js"></script>
+    <script src="js/primeNumberCalculator.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <div id="messanger"></div>
+    <label for="workers-count">Enter number of workers: </label>
+    <input id="workers-count" type="text" placeholder="number of workers"/>
+    <button id="submit-workers-count-btn">Submit</button>
+     <br />
+    <button id="btn-calc-upto-n">Calculate primes up to N</button>
+    Enter N: <input id="input-upto-n"/>
+    <strong><span id="result-one"></span></strong>
+    <br />
+    <button id="btn-calc-first-n">Calculate first N primes</button>
+    Enter N: <input id="input-n"/>
+    <strong><span id="result-two"></span></strong>
+    <br />
+    <button id="btn-calc-range">Calculate primes in interval</button>
+    Enter A: <input id="input-a"/>
+    Enter B: <input id="input-b"/>
+    <strong><span id="result-three"></span></strong>
+    <br />
+</body>
+</html>
