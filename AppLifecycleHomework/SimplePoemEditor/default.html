@@ -1,0 +1,47 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>SimplePoemEditor</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <!-- SimplePoemEditor references -->
+    <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/default.js"></script>
+</head>
+<body>
+    <h1>Poem Editor</h1>
+    <label for="verse-select">Select verses length(number of lines): </label>
+    <select id="verse-select">
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+    </select>
+    <button id="set-verse-btn">Set verse length</button>
+    <br/>
+    <label for="poem-line">Enter new poem line: </label>
+    <input/ type="text" id="poem-line">
+    <button id="add-line">Add line</button>
+    <br/>
+    <div id="poem-container"></div>
+    <div id="verse-div"> <ol id="verse-container" data-verse-count=""></ol></div>
+    <div id="createAppBar" data-win-control="WinJS.UI.AppBar" data-win-options="">
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'save-to-file',label:'Save',icon:'save',section:'global',tooltip:'Save poem to file'}">
+        </button>
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'open-from-file',label:'Open',icon:'openfile',section:'global',tooltip:'Open poem from file'}">
+        </button>
+        <hr data-win-control="WinJS.UI.AppBarCommand" data-win-options="{type:'separator',section:'global'}" />
+        <button data-win-control="WinJS.UI.AppBarCommand" data-win-options="{id:'start-new',label:'Start new poem',icon:'go',section:'global',tooltip:'Start new poem'}">
+        </button>
+    </div>
+    
+</body>
+</html>

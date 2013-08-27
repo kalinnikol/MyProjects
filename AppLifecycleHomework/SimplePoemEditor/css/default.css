@@ -1,0 +1,38 @@
+﻿body{
+    margin:50px;
+    padding:10px;
+}
+
+label {
+font-size:20px;
+}
+div#poem-container {
+font-size:24px;
+border:1px solid green;
+width:600px;
+height:400px;
+overflow-y: scroll;
+display:inline-block;
+margin-right:80px;
+padding:10px;
+}
+
+div#verse-div {
+    width:500px;
+    height:200px;
+    border:1px solid green;
+    display:inline-block;
+    position:fixed;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+}
+
+@media screen and (-ms-view-state: filled) {
+}
+
+@media screen and (-ms-view-state: snapped) {
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+}
