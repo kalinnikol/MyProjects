@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<albums>
+  <album>
+    <name>Flags</name>
+    <images>
+      <image>
+        <title>Bulgaria</title>
+        <source>
+          \ViewModels\Images\bulgaria-flag.png
+        </source>
+      </image>
+      <image>
+        <title>Serbia</title>
+        <source>\ViewModels\Images\serbia-flag.jpg</source>
+      </image>
+      <image>
+        <title>Romania</title>
+        <source>\ViewModels\Images\romania-flag.png</source>
+      </image>
+    </images>
+  </album>
+  <album>
+    <name>Meals</name>
+    <images>
+      <image>
+        <title>Musaka</title>
+        <source>\ViewModels\Images\musaka.jpg</source>
+      </image>
+      <image>
+        <title>Leshta</title>
+        <source>\ViewModels\Images\leshta.jpg</source>
+      </image>
+    </images>
+  </album>
+</albums>
